@@ -1,0 +1,132 @@
+.app__navbar
+{
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 2rem;
+    position:fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.app__navbar-logo
+{
+    display: flex;
+    justify-content: center;
+    width:150px;
+    cursor: pointer;
+}
+
+.app__navbar-links
+{
+    display: flex;
+    list-style: none;
+    gap:1rem;
+    font-size:1rem;
+    transition: all 0.3ms ease;
+   
+}
+
+.app__navbar-links li a{
+font-weight: 350;
+}
+
+.app__navbar-links a:hover
+{
+    color:var(--color-grey);
+}
+
+.app__navbar_login
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.app__navbar_login a
+{
+    font-weight: 400;
+}
+.app__navbar_login div{
+    width:2px;
+    background-color: var(--color-gray);
+    height: 20px;
+}
+
+.app__navbar-smallscreen{
+    display: none;
+}
+
+.app__navbar-smallscreen_overlay
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100vh;
+    background-color: var(--color-black);
+    animation: slide-bottom 600ms;
+    flex-direction: column;
+    z-index:200;
+}
+
+.menu-item
+{
+    position:absolute;
+    top:20px;
+    right:20px;
+    cursor: pointer;
+}
+
+ .app__navbar-smallScreen_links {
+     color: var(--color-golden);
+     list-style: none;
+ }
+
+ .app__navbar-smallScreen_links li{
+    font-family: var(--font-base);
+    font-size:2rem;
+    margin:1rem;
+ }
+
+  .app__navbar-smallScreen_links li:hover
+  {
+    color: var(--color-white);
+  }
+
+
+@media(width<1150px)
+{
+    .app__navbar-logo
+    {
+width:170px;
+    }
+    .app__navbar-links
+    {
+        display: none;
+    }
+    .app__navbar-smallscreen
+    { 
+        display: flex;
+    }
+    .app__navbar-smallscreen_overlay
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }   
+}
+
+@media(width<650px)
+{
+    .app__navbar_login
+    {
+        display: none;
+    }
+
+     .app__navbar-logo
+        {
+width:100px;
+        }
+}

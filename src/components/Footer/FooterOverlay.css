@@ -1,0 +1,118 @@
+.app__footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:3rem;
+}
+.app__footer>div
+{
+    width: 100%;
+    gap:1.5rem;
+    flex-direction: row;
+}
+.app__footer-contact
+{
+    min-width: 33%;
+    flex-direction: column;
+    text-align: center;
+}
+
+.app__footer-title h4
+{
+font-weight: 400;
+}
+
+.app__footer-title h2{
+text-transform: uppercase;
+}
+
+.app__footer-contact  p {
+    color:var(--color-grey);
+    font-weight: 400;
+    font-size: 14px;
+    margin-top:1rem;
+    
+}
+
+.app__footer-title 
+{
+    flex-direction: column;
+    text-align: center;
+}
+.app__footer-title p{
+    margin-bottom: 1.5rem;
+}
+
+.app__footer_contact-socialIcons
+{
+    margin-top:1rem;
+    color: var(--color-white);
+    gap:1rem;
+    font-size: 20px;
+}
+
+.app__footer-working
+{
+
+    width: 33%;
+    text-align: center;
+    flex-direction: column;
+    justify-self: flex-start;
+}
+
+.app__footer-working h4
+{
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.app__footer-weekDays,
+.app__footer-weekEnd{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.app__footer-weekDays p,
+.app__footer-weekEnd p
+{
+    color:var(--color-grey);
+    font-size:14px;
+}
+
+.app__footer-copyRight
+{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+.app__footer-copyRight p{
+    color: var(--color-grey);
+    font-size: 14px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left: 5%;
+    
+}
+
+@media(width<=950px)
+{
+    .app__footer>div
+    {
+     flex-direction: column;
+     gap:2rem;
+     width: 90%;
+    }
+
+    .app__footer-working
+    {
+        width: 100%;
+    }
+
+
+}
+

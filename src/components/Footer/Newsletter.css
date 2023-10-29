@@ -1,0 +1,39 @@
+.app__newsLetter
+{
+    padding:3rem 0 5rem 0;
+    background-color: var(--color-black);
+    flex-direction: column;
+    row-gap: 1.25rem;
+    text-align: center;
+    height:fit-content;
+}
+
+.app__newsLetter h2 {
+line-height: 2rem;
+}
+
+.app__form
+{
+    display: flex;
+    gap:1rem;
+    width: 55%;
+}
+
+.app__form input{
+    width:100%;
+    background-color: transparent;
+    outline: 2px solid var(--color-grey);
+    border:none;
+    padding-left:1rem;
+    font-family: var(--font-base);
+    font-size: 1rem;
+}
+
+@media(width<=850px)
+{
+    .app__form
+    {
+        width: 80%;
+    }
+}
+

@@ -1,0 +1,36 @@
+.app__header
+{
+    background-color: var(--color-black);
+}
+
+.app__wrapper_sub-heading p
+{
+color: var(--color-white);
+font-size: 1.25rem;
+}
+
+.app__wrapper_info-title{
+    font-size:110px;
+    color: var(--color-golden);
+    line-height: 120px;
+    font-weight: 500; 
+    
+}
+
+.app__wrapper_info .app__wrapper-para
+{
+    font-size: 14px;
+    color: var(--color-grey);
+    margin:  2rem 0;
+    max-width: 75%;
+    line-height: 18px;
+}
+
+@media(width<650px)
+{
+    .app__wrapper_info-title
+    {
+        font-size:60px;
+        line-height: 72px;
+    }
+}
